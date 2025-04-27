@@ -35,7 +35,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && apt-get clean autoclean --yes \
  && apt-get autoremove --yes \
  && rm -rf /var/cache/apt/archives* /var/lib/apt/lists/*
-
-COPY . /src/
-
-WORKDIR /src/
